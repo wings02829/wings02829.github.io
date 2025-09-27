@@ -1,11 +1,12 @@
-title: Wings
+title: 'Hexo'
 subtitle: ''
 description: ''
 keywords: null
 author: John Doe
 language: en
-timezone: ''
+timezone: 'Asia/Beijing'
 url: http://wings02829.github.io
+root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
