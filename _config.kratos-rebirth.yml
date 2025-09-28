@@ -5,7 +5,7 @@ site_logo: ''
 snow: false
 click_animate_js: 'candy'
 enable_dark: true
-highlight_theme: night-eighties # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
+highlight_theme: night-blue # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
 check_update: true
 # canonical: true
 
@@ -47,7 +47,7 @@ vendors:
 # 自定义样式
 customStyles:
   images: # 图片相关设置
-    # banner: /images/ob1.png
+    banner: /images/ob.jpg
     # background: /images/ob.png
 
 # Index 首页配置
