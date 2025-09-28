@@ -60,7 +60,3 @@ include: null
 exclude: null
 ignore: null
 theme: kratos-rebirth
-deploy:
-  type: 
-  repository: git@github.com:wings02829/wings02829.github.io.git
-  branch: master

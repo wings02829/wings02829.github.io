@@ -1,0 +1,70 @@
+# .github/workflows/deploy.yml
+
+name: Hexo Deploy to Pages
+
+on:
+  push:
+    # 仅在代码推送到 main 分支时触发部署
+    branches:
+      - main
+  # 允许您随时在 GitHub 界面手动运行部署
+  workflow_dispatch:
+
+# 权限设置：必须要有 pages: write 和 id-token: write
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 设置部署环境
+environment:
+  name: github-pages
+  url: ${{ steps.deployment.outputs.page_url }}
+
+jobs:
+  build:
+    name: Build Hexo Site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          # 确保检出完整历史
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 推荐使用 LTS 版本
+
+      # 1. 安装 Hexo 和所有依赖 (包括 Kratos 主题)
+      - name: Install Dependencies
+        run: |
+          npm install -g hexo-cli
+          npm install
+
+      # 2. 清理并生成静态文件到 public 文件夹
+      - name: Generate Hexo files
+        run: |
+          hexo clean
+          hexo generate
+
+      # 3. 将 public 文件夹的内容打包成 Pages Artifact 上传
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # public 文件夹是 Hexo 生成的静态文件所在地
+          path: ./public 
+  
+  deploy:
+    name: Deploy to GitHub Pages
+    # 这一步依赖于 build 步骤的成功
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 4. 部署 Pages Artifact
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
