@@ -63,5 +63,5 @@ theme: hexo-theme-MiHoYo
 deploy:
   type: 
   repository: git@github.com:wings02829/wings02829.github.io.git
-  branch: master
+  branch: gh-pages
 
