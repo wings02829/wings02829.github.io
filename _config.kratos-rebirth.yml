@@ -47,8 +47,8 @@ vendors:
 # 自定义样式
 customStyles:
   images: # 图片相关设置
-    # banner: /images/ob.png
-    # background: /images/ob.png # 站点背景
+    # banner: /images/ob1.png
+    # background: /images/ob.png
 
 # Index 首页配置
 index:
