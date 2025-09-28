@@ -188,8 +188,7 @@ widgets:
 - category
 - tagcloud
 - posts
-avatarUri: /images/miyamura.png
-  rounded: true
+avatarUri: C:Users/Dell/my blog/images/miyamura.png
 mobile_toc: 
   hide: false
   hide_id: false
