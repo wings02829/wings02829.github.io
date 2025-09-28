@@ -59,9 +59,8 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: hexo-theme-MiHoYo
+theme: kratos-rebirth
 deploy:
   type: 
   repository: git@github.com:wings02829/wings02829.github.io.git
-  branch: gh-pages
-
+  branch: master
