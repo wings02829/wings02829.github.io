@@ -188,7 +188,7 @@ widgets:
 - category
 - tagcloud
 - posts
-avatarUri: /images/avatar.webp
+avatarUri: /source/images/miyamura.jpg
 mobile_toc: 
   hide: false
   hide_id: false
