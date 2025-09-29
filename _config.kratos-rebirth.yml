@@ -207,10 +207,10 @@ search:
 ## 由于Javascript被压缩后难以有效编辑与生成，因而为了简化操作，将相关的配置项在生成文件时以独立的json文件写出，调用时使用fetch API获取。
 jsconfig:
   main:
-    cover:
-      randomAmount: 0 # 表示从1~20
-      baseUrl: /images/pic/
-      filenameTemplate: "pic_{no}.webp" 
+    #cover:
+    #  randomAmount: 0 # 表示从1~20
+    #  baseUrl: /images/pic/
+    #  filenameTemplate: "pic_{no}.webp" 
     createTime: "2018/05/06 17:03:12"
     donateBtn: "支持我~"
     scanNotice: "扫一扫，好不好？"
