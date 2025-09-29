@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: 2025-09-28 23:23:23
-cover: pic_1.webp
+cover: /images/pic_4.webp
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
