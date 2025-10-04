@@ -60,3 +60,20 @@ include: null
 exclude: null
 ignore: null
 theme: kratos-rebirth
+markdown:
+ preset: "default"
+ render:
+   html: true
+   xhtmlOut: false
+   langPrefix: "language-"
+   breaks: true
+   linkify: true
+   typographer: true
+   quotes: "“”‘’"
+ plugins:
+   - markdown-it-abbr
+   - markdown-it-emoji
+   - markdown-it-footnote
+   - markdown-it-ins
+   - markdown-it-sub
+   - markdown-it-sup
