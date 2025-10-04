@@ -120,7 +120,6 @@ disqusjs:
   adminlabel: 
 
 # Valine [Valine](https://valine.js.org) 评论相关
-
 valine:
   app_id: qpGJwvztSjakT5cE4l8vCYD4-gzGzoHsz
   app_key: 5GBHOTayGKtjWKOj7WweFXvi
