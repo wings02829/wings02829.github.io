@@ -48,7 +48,7 @@ vendors:
 customStyles:
   images: # 图片相关设置
     banner: /images/ob.jpg
-    # background: /images/ob.png
+    background: /images/bj.png
 
 # Index 首页配置
 index:
@@ -120,6 +120,7 @@ disqusjs:
   adminlabel: 
 
 # Valine [Valine](https://valine.js.org) 评论相关
+
 valine:
   app_id: 
   app_key: 
