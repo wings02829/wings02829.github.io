@@ -99,8 +99,8 @@ posts:
   show_cc: true
   donate: false
   share: true
-  comments: valine
-    provider: ''
+  comments: 
+    provider: valine
     enableBGImage: false
   wordCount: 
     enable: true
