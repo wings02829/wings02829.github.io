@@ -79,5 +79,5 @@ markdown:
    - markdown-it-sup
 mathjax:
   enable: ture
-  per_page: true
+  per_page: false
   cdn: //cdn.jsdeliver.net/npm/katex@0.13.11/dist/katex.min.js
